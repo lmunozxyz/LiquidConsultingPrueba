@@ -3,7 +3,8 @@ Esta es la prueba técnica de Liquid Consulting para el puesto de Web HTML Devel
 
 La configuración que usaremos será:
 Angular CLI
-Node.js
+Node.js: 15.0.1
+NPM: 7.0.3
 TypeScript
 Bootstrap
 
