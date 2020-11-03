@@ -10,12 +10,11 @@ import { ViewAllEstudianteByCategoryComponent } from './view-all-estudiante-by-c
 import { ViewAllEstudianteByDateComponent } from './view-all-estudiante-by-date/view-all-estudiante-by-date.component';
 
 const routes: Routes = [
-  { path: '', component: EstudiantesUComponent },
+  { path: '', component: ViewAllEstudianteComponent },
   { path: 'create-estudiante', component: CreateEstudianteComponent },
   { path: 'update-estudiante/:id', component: UpdateEstudianteComponent },
   { path: 'delete-estudiante/:id', component: DeleteEstudianteComponent },
   { path: 'view-estudiante/:id', component: ViewEstudianteComponent },
-  { path: 'view-all-estudiante', component: ViewAllEstudianteComponent },
   { path: 'view-all-estudiante-by-category', component: ViewAllEstudianteByCategoryComponent },
   { path: 'view-all-estudiante-by-date', component: ViewAllEstudianteByDateComponent },
   { path: 'search', component: ViewAllEstudianteByCategoryComponent },
