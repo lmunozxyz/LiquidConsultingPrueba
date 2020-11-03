@@ -6,9 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
 
 import { CarrerasModule } from './carreras/carreras.module';
+
 
 
 @NgModule({
@@ -18,6 +21,7 @@ import { CarrerasModule } from './carreras/carreras.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     SiteFrameworkModule,
     CarrerasModule
   
