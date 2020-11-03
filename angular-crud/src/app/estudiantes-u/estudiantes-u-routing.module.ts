@@ -13,13 +13,13 @@ const routes: Routes = [
   { path: '', component: EstudiantesUComponent },
   { path: 'create-estudiante', component: CreateEstudianteComponent },
   { path: 'update-estudiante/:id', component: UpdateEstudianteComponent },
-  { path: 'delete-estudiante', component: DeleteEstudianteComponent },
+  { path: 'delete-estudiante/:id', component: DeleteEstudianteComponent },
   { path: 'view-estudiante/:id', component: ViewEstudianteComponent },
   { path: 'view-all-estudiante', component: ViewAllEstudianteComponent },
   { path: 'view-all-estudiante-by-category', component: ViewAllEstudianteByCategoryComponent },
   { path: 'view-all-estudiante-by-date', component: ViewAllEstudianteByDateComponent },
   { path: 'search', component: ViewAllEstudianteByCategoryComponent },
-  { path: 'search', component: ViewAllEstudianteByDateComponent }
+  { path: 'search-date', component: ViewAllEstudianteByDateComponent }
 
 ];
 

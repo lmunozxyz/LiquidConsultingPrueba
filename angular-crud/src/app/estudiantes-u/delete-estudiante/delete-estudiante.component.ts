@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-delete-estudiante',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteEstudianteComponent implements OnInit {
 
-  constructor() { }
+  estudianteId = 0;
+
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(data=> {
+      this.estudianteId = data.id;
+    });
   }
 
 }
