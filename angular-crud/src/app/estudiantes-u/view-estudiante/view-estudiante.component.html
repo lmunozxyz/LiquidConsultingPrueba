@@ -1,38 +1,74 @@
-
-
-
-<div class="card text-center" style="width: 18rem;">
-    <div class="card-header">
-        Detalle del estudiante
+  <form class="form-signin">
+    <div class="text-center mb-4">
+      <h1 class="h3 mb-3 font-weight-normal">Detalle estudiante</h1>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Detalle del estudiante:</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <p>Nombre: </p>
-<p>Apellidos: </p>
-<p>FechaNacimiento:</p>
-<p>Genero</p>
-<p>Universidad</p>
-<p>Carrera</p>
-<p>FechaAdminsion</p>
-<p>Direccion</p>
-<p>Activo</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    <div class="card-footer text-muted">
-      2 days ago
-    </div>
-  </div>
+  
 
-  <div class="container">
     <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    Hello world
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    Hello world 2
-          </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    Hello world 3
-              </div>
+      <div class="col-md-6 mb-3">
+        <label for="cc-name"><span class="text-muted">Nombre:</span></label>
+        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+        <div class="invalid-feedback">
+          Name on card is required
+        </div>
       </div>
+      <div class="col-md-6 mb-3">
+        <label for="cc-number"><span class="text-muted">Apellidos:</span></label>
+        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+ 
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="cc-name"><span class="text-muted">Fecha nacimiento:</span></label>
+        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+ 
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="cc-number"><span class="text-muted">Género:</span></label>
+        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+  
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="cc-name"><span class="text-muted">Universidad:</span></label>
+        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+      
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="cc-number"><span class="text-muted">Carrera:</span></label>
+        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="cc-name"><span class="text-muted">Fecha admisión:</span></label>
+        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+  
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="cc-number"><span class="text-muted">Activo:</span></label>
+        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <label for="cc-name"><span class="text-muted">Dirección:</span></label>
+        <textarea class="form-control"></textarea>
+      </div>
+    </div>
+
+  </form>
