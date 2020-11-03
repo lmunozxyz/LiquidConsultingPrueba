@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+airMargins{
+    padding-top: 70px!important;
+}
+
+header{
+    margin-bottom: 50px!important;
+}
+
+footer{
+    margin-top: 50px!important;
+}
