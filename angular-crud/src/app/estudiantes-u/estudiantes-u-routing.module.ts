@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'create-estudiante', component: CreateEstudianteComponent },
   { path: 'update-estudiante/:id', component: UpdateEstudianteComponent },
   { path: 'delete-estudiante/:id', component: DeleteEstudianteComponent },
-  { path: 'view-estudiante/:id', component: ViewEstudianteComponent },
+  { path: 'estudiante/:id', component: ViewEstudianteComponent },
   { path: 'view-all-estudiante-by-category', component: ViewAllEstudianteByCategoryComponent },
   { path: 'view-all-estudiante-by-date', component: ViewAllEstudianteByDateComponent },
   { path: 'search', component: ViewAllEstudianteByCategoryComponent },

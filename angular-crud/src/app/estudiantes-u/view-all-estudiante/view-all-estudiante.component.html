@@ -20,7 +20,7 @@
  
       <tr *ngFor="let estudiante of estudianteLista">
         
-        <td>{{ estudiante.name }}</td>
+        <td><a routerLink="estudiante/{{estudiante.id}}">{{ estudiante.name }}</a></td>
         <td>{{ estudiante.lastname }}</td>
         <td>{{ estudiante.birthdate }}</td>
         <td>{{ estudiante.gender }}</td>

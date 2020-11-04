@@ -7,15 +7,12 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Nombre:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-        <div class="invalid-feedback">
-          Name on card is required
-        </div>
+        {{ estudianteDetalle.name }}
+  
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Apellidos:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
- 
+        {{ estudianteDetalle.lastname }}
       </div>
     </div>
 
@@ -24,12 +21,12 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Fecha nacimiento:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+        {{ estudianteDetalle.birthdate }}
  
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Género:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+        {{ estudianteDetalle.gender }}
   
       </div>
     </div>
@@ -39,12 +36,11 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Universidad:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-      
+        {{ estudianteDetalle.university }}
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Carrera:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+        {{ estudianteDetalle.carrer }}
       </div>
     </div>
 
@@ -53,12 +49,12 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Fecha admisión:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+        {{ estudianteDetalle.admissionDate }}
   
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Activo:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+        {{ estudianteDetalle.active }}
 
       </div>
     </div>
@@ -67,7 +63,7 @@
     <div class="row">
       <div class="col-md-12 mb-3">
         <label for="cc-name"><span class="text-muted">Dirección:</span></label>
-        <textarea class="form-control"></textarea>
+        {{ estudianteDetalle.address }}
       </div>
     </div>
 

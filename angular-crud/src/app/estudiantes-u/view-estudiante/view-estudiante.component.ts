@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { EstudiantesService } from '../estudiantes.service';
 import { ActivatedRoute } from '@angular/router';
+import { Estudiante } from '../estudiante';
 
 @Component({
   selector: 'app-view-estudiante',
@@ -7,14 +9,23 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./view-estudiante.component.css']
 })
 export class ViewEstudianteComponent implements OnInit {
-  estudianteId = 0;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  estudianteId = 0;
+  estudianteDetalle: Estudiante;
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private estudiantesService: EstudiantesService) { }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(data=>{
+
+    this.activatedRoute.params.subscribe(data => {
       this.estudianteId = data.id;
-    });
+
+    })
+    this.estudiantesService.viewEstudiante(this.estudianteId).subscribe(estudianteData => {
+      this.estudianteDetalle = estudianteData;
+
+    });  
   }
 
 }
