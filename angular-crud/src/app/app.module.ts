@@ -22,8 +22,7 @@ import { CarrerasModule } from './carreras/carreras.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SiteFrameworkModule,
-    CarrerasModule
+    SiteFrameworkModule
   
   ],
   providers: [],

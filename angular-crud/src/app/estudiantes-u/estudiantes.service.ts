@@ -14,37 +14,37 @@ export class EstudiantesService {
   constructor(private httpClient: HttpClient) { }
 
   getAllEstudiantes(): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU';
+    const estudianteUrl = 'http://localhost:3000/students';
     return this.httpClient.get<Estudiante>(estudianteUrl); //return an observable
   }
 
   createEstudiante(estudianteBody): Observable<Estudiante> {
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU';
+    const estudianteUrl = 'http://localhost:3000/students';
     return this.httpClient.post<Estudiante>(estudianteUrl, estudianteBody); //return an observable
   }
 
   viewEstudiante(estudianteId): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU/'+estudianteId;
+    const estudianteUrl = 'http://localhost:3000/students/'+estudianteId;
     return this.httpClient.get<Estudiante>(estudianteUrl); //return an observable
   }
 
   updateEstudiante(estudianteId, estudianteBody): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU/'+estudianteId;
+    const estudianteUrl = 'http://localhost:3000/students/'+estudianteId;
     return this.httpClient.put<Estudiante>(estudianteUrl, estudianteBody); //return an observable
   }
 
   deleteEstudiante(estudianteId): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU/'+estudianteId;
+    const estudianteUrl = 'http://localhost:3000/students/'+estudianteId;
     return this.httpClient.delete<Estudiante>(estudianteUrl); //return an observable
   }
 
   searchCategoryEstudiante(categoryId): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU/category='+categoryId;
+    const estudianteUrl = 'http://localhost:3000/students/category='+categoryId;
     return this.httpClient.get<Estudiante>(estudianteUrl); //return an observable
   }
 
   searchDateEstudiante(dateParam): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/EstudiantesU/date='+dateParam;
+    const estudianteUrl = 'http://localhost:3000/students/date='+dateParam;
     return this.httpClient.get<Estudiante>(estudianteUrl); //return an observable
   } 
 }

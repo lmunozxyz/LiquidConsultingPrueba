@@ -7,7 +7,7 @@
 <table class="table table-hover">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        
         <th scope="col">Nombre</th>
         <th scope="col">Apellidos</th>
         <th scope="col">Fecha</th>
@@ -18,95 +18,15 @@
     </thead>
     <tbody>
  
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let estudiante of estudianteLista">
+        
+        <td>{{ estudiante.name }}</td>
+        <td>{{ estudiante.lastname }}</td>
+        <td>{{ estudiante.birthdate }}</td>
+        <td>{{ estudiante.gender }}</td>
+        <td>{{ estudiante.university }}</td>
       </tr>
 
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>fat</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">3</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">4</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">5</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">6</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">7</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">8</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">8</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-
-      <tr>
-        <th scope="row">10</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
     </tbody>
   </table>
   </div>
