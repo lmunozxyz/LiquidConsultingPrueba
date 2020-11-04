@@ -10,6 +10,8 @@ import { UpdateEstudianteComponent } from './update-estudiante/update-estudiante
 import { DeleteEstudianteComponent } from './delete-estudiante/delete-estudiante.component';
 import { ViewAllEstudianteByDateComponent } from './view-all-estudiante-by-date/view-all-estudiante-by-date.component';
 import { ViewAllEstudianteByCategoryComponent } from './view-all-estudiante-by-category/view-all-estudiante-by-category.component';
+import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -21,10 +23,11 @@ import { ViewAllEstudianteByCategoryComponent } from './view-all-estudiante-by-c
     UpdateEstudianteComponent, 
     DeleteEstudianteComponent, 
     ViewAllEstudianteByDateComponent, 
-    ViewAllEstudianteByCategoryComponent
+    ViewAllEstudianteByCategoryComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
     EstudiantesURoutingModule
   ]
 })

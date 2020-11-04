@@ -12,6 +12,9 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
 
 import { CarrerasModule } from './carreras/carreras.module';
 
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -21,6 +24,7 @@ import { CarrerasModule } from './carreras/carreras.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     SiteFrameworkModule
   
