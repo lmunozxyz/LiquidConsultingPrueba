@@ -1,75 +1,53 @@
-<form class="form-signin">
+  <form (submit)="updateEstudiante(addEstudianteForm)" #addEstudianteForm="ngForm" class="form-signin">
     <div class="text-center mb-4">
       <h1 class="h3 mb-3 font-weight-normal">Actualizar estudiante ID: {{ estudianteId }}</h1>
     </div>
   
-
+  
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Nombre:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-        <div class="invalid-feedback">
-          Name on card is required
-        </div>
+        
+        <input type="text" class="form-control" id="cc-name" placeholder=""
+        required value="Ingresar nombre" name="estudiante_name" [(ngModel)]="estudianteDetalle.name" ngModel>
+        
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Apellidos:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
- 
+        <input type="text" class="form-control" id="cc-number" placeholder="" required
+        name="estudiante_lastname"  [(ngModel)]="estudianteDetalle.lastname" ngModel>
       </div>
     </div>
-
-
-
+  
+  
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Fecha nacimiento:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
- 
+        <input type="text" class="form-control" id="cc-name" placeholder="" required
+        name="estudiante_birthdate" [(ngModel)]="estudianteDetalle.birthdate" ngModel>
+  
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Género:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+        <input type="text" class="form-control" id="cc-number" placeholder="" required
+        name="estudiante_gender" [(ngModel)]="estudianteDetalle.gender" ngModel>
+      </div>
+    </div>
   
-      </div>
-    </div>
-
-
-
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <label for="cc-name"><span class="text-muted">Universidad:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-      
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="cc-number"><span class="text-muted">Carrera:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
-      </div>
-    </div>
-
-
-
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <label for="cc-name"><span class="text-muted">Fecha admisión:</span></label>
-        <input type="text" class="form-control" id="cc-name" placeholder="" required>
   
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="cc-number"><span class="text-muted">Activo:</span></label>
-        <input type="text" class="form-control" id="cc-number" placeholder="" required>
-
-      </div>
-    </div>
-
-
     <div class="row">
       <div class="col-md-12 mb-3">
-        <label for="cc-name"><span class="text-muted">Dirección:</span></label>
-        <textarea class="form-control"></textarea>
-      </div>
+        <label for="cc-name"><span class="text-muted">Universidad:</span></label>
+        <input type="text" class="form-control" id="cc-name" placeholder="" required
+        name="estudiante_university" [(ngModel)]="estudianteDetalle.university" ngModel>
   
+      </div>
     </div>
+  
+
+  
+  
+
     <button class="btn btn-lg btn-primary btn-block" type="submit">Actualizar estudiante</button>
   </form>
+  

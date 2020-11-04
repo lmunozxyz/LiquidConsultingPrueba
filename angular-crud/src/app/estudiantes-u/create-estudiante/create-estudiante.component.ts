@@ -17,7 +17,6 @@ export class CreateEstudianteComponent implements OnInit {
     console.log(form.value);
 
     let newEstudiante = {
-//      estudianteId: form.value.product_category,
         name: form.value.estudiante_name,
         lastname: form.value.estudiante_lastname,
         birthdate: form.value.estudiante_birthdate,

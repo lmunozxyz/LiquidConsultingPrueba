@@ -12,8 +12,6 @@ import { ViewAllEstudianteByDateComponent } from './view-all-estudiante-by-date/
 import { ViewAllEstudianteByCategoryComponent } from './view-all-estudiante-by-category/view-all-estudiante-by-category.component';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   declarations: [
     EstudiantesUComponent, 
