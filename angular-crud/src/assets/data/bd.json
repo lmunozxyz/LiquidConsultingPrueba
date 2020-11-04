@@ -1,16 +1,12 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "Joe",
-      "lastname": "Smith",
+      "name": "Bob",
+      "lastname": "Dylan",
       "birthdate": "1980-01-23",
       "gender": "male",
       "university": "University 10",
-      "carrer": "Informatica",
-      "admissionDate": "2017-10-01",
-      "address": "San José",
-      "active": true
+      "id": 1
     },
     {
       "id": 2,
@@ -127,6 +123,14 @@
       "gender": "Male",
       "university": "Latina",
       "id": 11
+    },
+    {
+      "name": "Ronaldihno",
+      "lastname": "Gaucho",
+      "birthdate": "19-09-1976",
+      "gender": "Male",
+      "university": "Brasil",
+      "id": 13
     }
   ]
 }
