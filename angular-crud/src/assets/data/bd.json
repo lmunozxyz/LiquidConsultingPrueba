@@ -2,7 +2,7 @@
   "students": [
     {
       "name": "Bob",
-      "lastname": "Dylan",
+      "lastname": "Dylan Ramirez",
       "birthdate": "1980-01-23",
       "gender": "male",
       "university": "University 10",
@@ -123,14 +123,6 @@
       "gender": "Male",
       "university": "Latina",
       "id": 11
-    },
-    {
-      "name": "Ronaldihno",
-      "lastname": "Gaucho",
-      "birthdate": "19-09-1976",
-      "gender": "Male",
-      "university": "Brasil",
-      "id": 13
     }
   ]
 }
