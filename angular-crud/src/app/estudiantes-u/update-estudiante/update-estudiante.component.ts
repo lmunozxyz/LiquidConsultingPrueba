@@ -1,11 +1,3 @@
-
- 
-
-
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { EstudiantesService } from '../estudiantes.service';
@@ -44,7 +36,7 @@ export class UpdateEstudianteComponent implements OnInit {
 
     const updateEstudiante = {
       id: form.value.id,
-      name: form.value.estudiante_name,
+      name: form.value.name,
       lastname: form.value.estudiante_lastname,
       birthdate: form.value.estudiante_birthdate,
       gender: form.value.estudiante_gender,

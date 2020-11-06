@@ -11,6 +11,7 @@ import { Estudiante } from '../estudiante';
 export class ViewEstudianteComponent implements OnInit {
 
   estudianteId = 0;
+  name = "";
   estudianteDetalle: Estudiante;
   constructor(
     private activatedRoute: ActivatedRoute,

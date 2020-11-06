@@ -7,12 +7,12 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Nombre:</span></label>
-        {{ estudianteDetalle.name }}
+        {{ estudianteDetalle?.name }}
   
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Apellidos:</span></label>
-        {{ estudianteDetalle.lastname }}
+        {{ estudianteDetalle?.lastname }}
       </div>
     </div>
 
@@ -21,12 +21,12 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Fecha nacimiento:</span></label>
-        {{ estudianteDetalle.birthdate }}
+        {{ estudianteDetalle?.birthdate }}
  
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Género:</span></label>
-        {{ estudianteDetalle.gender }}
+        {{ estudianteDetalle?.gender }}
   
       </div>
     </div>
@@ -36,11 +36,11 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Universidad:</span></label>
-        {{ estudianteDetalle.university }}
+        {{ estudianteDetalle?.university }}
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Carrera:</span></label>
-        {{ estudianteDetalle.carrer }}
+        {{ estudianteDetalle?.carrer }}
       </div>
     </div>
 
@@ -49,12 +49,12 @@
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="cc-name"><span class="text-muted">Fecha admisión:</span></label>
-        {{ estudianteDetalle.admissionDate }}
+        {{ estudianteDetalle?.admissionDate }}
   
       </div>
       <div class="col-md-6 mb-3">
         <label for="cc-number"><span class="text-muted">Activo:</span></label>
-        {{ estudianteDetalle.active }}
+        {{ estudianteDetalle?.active }}
 
       </div>
     </div>
@@ -63,13 +63,13 @@
     <div class="row">
       <div class="col-md-12 mb-3">
         <label for="cc-name"><span class="text-muted">Dirección:</span></label>
-        {{ estudianteDetalle.address }}
+        {{ estudianteDetalle?.address }}
       </div>
     </div>
     
     <div class="row text-center">
-      <a class="btn btn-success btn-block" href="EstudiantesU/update-estudiante/{{ estudianteDetalle.id }}" role="button">Actualizar Estudiante</a>
-      <a class="btn btn-danger btn-block" href="EstudiantesU/delete-estudiante/{{ estudianteDetalle.id }}" role="button">Borrar Estudiante</a>
+      <a class="btn btn-success btn-block" href="EstudiantesU/update-estudiante/{{ estudianteDetalle?.id }}" role="button">Actualizar Estudiante</a>
+      <a class="btn btn-danger btn-block" href="EstudiantesU/delete-estudiante/{{ estudianteDetalle?.id }}" role="button">Borrar Estudiante</a>
 
     </div>
 

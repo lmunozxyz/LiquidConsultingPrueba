@@ -22,7 +22,7 @@ export class DeleteEstudianteComponent implements OnInit {
 
 
       this.estudianteService.deleteEstudiante(this.estudianteId).subscribe(deleteEstudiantedata => {{
-        
+        console.log('Estudiante borrado');
       }})
     });
   }
