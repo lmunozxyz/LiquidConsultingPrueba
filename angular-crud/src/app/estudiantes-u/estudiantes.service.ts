@@ -34,17 +34,7 @@ export class EstudiantesService {
   }
 
   deleteEstudiante(estudianteId): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/students/'+estudianteId;
+    const estudianteUrl = 'http://localhost:3000/students/'+ estudianteId;
     return this.httpClient.delete<Estudiante>(estudianteUrl); //return an observable
-  }
-
-  searchCategoryEstudiante(categoryId): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/students/category='+categoryId;
-    return this.httpClient.get<Estudiante>(estudianteUrl); //return an observable
-  }
-
-  searchDateEstudiante(dateParam): Observable<Estudiante>{
-    const estudianteUrl = 'http://localhost:3000/students/date='+dateParam;
-    return this.httpClient.get<Estudiante>(estudianteUrl); //return an observable
   } 
 }

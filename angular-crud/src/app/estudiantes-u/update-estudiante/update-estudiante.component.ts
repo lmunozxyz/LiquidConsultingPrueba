@@ -37,15 +37,15 @@ export class UpdateEstudianteComponent implements OnInit {
     const updateEstudiante = {
       id: form.value.id,
       name: form.value.name,
-      lastname: form.value.estudiante_lastname,
-      birthdate: form.value.estudiante_birthdate,
-      gender: form.value.estudiante_gender,
-      university: form.value.estudiante_university,
+      lastname: form.value.lastname,
+      birthdate: form.value.birthdate,
+      gender: form.value.gender,
+      university: form.value.university,
 
   };
 
     this.estudianteService.updateEstudiante(this.estudianteId, updateEstudiante).subscribe(data => {
-        console.log(data);
+      console.log(data);
     });
 
   }
