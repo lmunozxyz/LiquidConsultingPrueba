@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "name": "Luisddd",
+      "name": "Jesús",
       "lastname": "Munozz",
       "birthdate": "10",
       "gender": "Masc",
@@ -9,52 +9,20 @@
       "id": 4
     },
     {
-      "name": "Luis",
-      "lastname": "Munozz",
-      "birthdate": "19-09-1976",
-      "gender": "Male",
-      "university": "Latina",
-      "id": 5
-    },
-    {
-      "name": "Luisaaa A",
-      "lastname": "Munozz",
-      "birthdate": "19-09-1976",
-      "gender": "Male",
-      "university": "Latina",
-      "id": 6
-    },
-    {
-      "name": "Luis",
-      "lastname": "Munozz",
-      "birthdate": "19-09-1976",
-      "gender": "Male",
-      "university": "Latina",
-      "id": 7
-    },
-    {
-      "name": "Luis",
-      "lastname": "Munozz",
-      "birthdate": "19-09-1976",
-      "gender": "Male",
-      "university": "Latina",
-      "id": 8
-    },
-    {
-      "name": "Luis",
-      "lastname": "Munozz",
-      "birthdate": "19-09-1976",
-      "gender": "Male",
-      "university": "Latina",
-      "id": 9
-    },
-    {
-      "name": "Ronaldihno",
-      "lastname": "Dylan Marley",
+      "name": "Bob",
+      "lastname": "Dylan",
       "birthdate": "19-09-1976",
       "gender": "Male",
       "university": "University 1",
-      "id": 10
+      "id": 5
+    },
+    {
+      "name": "Ronaldihno",
+      "lastname": "Dylan2",
+      "birthdate": "19-09-1976",
+      "gender": "male",
+      "university": "University 1",
+      "id": 6
     }
   ]
 }

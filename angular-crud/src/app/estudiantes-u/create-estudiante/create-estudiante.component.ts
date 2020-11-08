@@ -28,6 +28,7 @@ export class CreateEstudianteComponent implements OnInit {
 
     this.estudianteService.createEstudiante(newEstudiante).subscribe(data => {
       console.log(data);
+      window.location.href = 'http://localhost:4200/EstudiantesU';
     });
 
   }

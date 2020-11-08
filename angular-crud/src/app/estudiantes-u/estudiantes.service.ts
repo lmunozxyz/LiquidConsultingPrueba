@@ -36,5 +36,5 @@ export class EstudiantesService {
   deleteEstudiante(estudianteId): Observable<Estudiante>{
     const estudianteUrl = 'http://localhost:3000/students/'+ estudianteId;
     return this.httpClient.delete<Estudiante>(estudianteUrl); //return an observable
-  } 
+  }
 }

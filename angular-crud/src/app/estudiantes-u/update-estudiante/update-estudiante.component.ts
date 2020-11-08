@@ -24,7 +24,9 @@ export class UpdateEstudianteComponent implements OnInit {
 
       this.estudianteService.viewEstudiante(this.estudianteId).subscribe(estudianteData =>{
         this.estudianteDetalle = estudianteData; // obtiene los datos del estudiante
+        
         console.log(this.estudianteDetalle);
+        
       });
 
     });

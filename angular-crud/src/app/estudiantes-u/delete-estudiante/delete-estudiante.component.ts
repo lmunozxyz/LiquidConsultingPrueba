@@ -19,9 +19,10 @@ export class DeleteEstudianteComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(data => {
       this.estudianteId = data.id;
-
+    
       this.estudianteService.deleteEstudiante(this.estudianteId).subscribe(deleteEstudiantedata => {{
-        this.estudianteService.getAllEstudiantes();
+        window.location.href = 'http://localhost:4200/EstudiantesU';
+            
       }})
     });
   }
